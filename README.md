@@ -1,1 +1,1 @@
-# CITC1300
+# CITC 1300 Seya Project Page
