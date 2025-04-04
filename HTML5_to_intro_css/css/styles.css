@@ -1,0 +1,33 @@
+body {
+    backgrpund-color: green;
+}
+#container {
+    background-color: tan;
+    width: 1200px;
+    margin: 20px auto;
+    border: 2px solid black;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+
+nav {
+   margin: 20px 0;
+    text-align: center;
+}
+
+nav a{
+    font_size: 24px;
+    color: black;
+}
+
+nav a:hover {
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
