@@ -1,5 +1,5 @@
 body {
-    backgrpund-color: green;
+    background-color: green;
 }
 #container {
     background-color: tan;
@@ -20,7 +20,7 @@ nav {
 }
 
 nav a{
-    font_size: 24px;
+    font-size: 24px;
     color: black;
 }
 
