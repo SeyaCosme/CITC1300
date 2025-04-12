@@ -1,31 +1,52 @@
 body {
-    background-color: green;
+    background-color: brown;
 }
 #container {
     background-color: tan;
     width: 1200px;
     margin: 20px auto;
-    border: 2px solid black;
+    border: 2px solid black
+    padding: 20px;
 }
 
+#banner {
+  width 100%;
+}
+
+.heading_style {
+    text-shadow: 2px 2px 2px #000;
+}
+   
 img {
     display: block;
     margin: 0 auto;
-    width: 80%;
+    width: 1000px;
 }
 
 nav {
-   margin: 20px 0;
     text-align: center;
+    margin: 20px 0;
+    background-color: cornsilk;
+    padding: 5px;
 }
 
-nav a{
-    font-size: 24px;
-    color: black;
+nav ul {list-style-type: none; padding: 0;}
+
+nav li { display: inline-block;}
+
+nav li a {display: block;
+color: black;
+font-size: 20px;
+font-weight: bold;
+text-decoration: none;
+margin: 0 20px;
+width: 125px;
+height: 40px;
+line-height: 40px;
 }
 
-nav a:hover {
-    text-decoration: none;
+nav a :hover {background-color: lemonchiffon;
+color: black;
 }
 
 h1, h2, h3 {
