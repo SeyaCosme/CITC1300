@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>CSS Styles</title>
-  <style>
-    <body> {
-      background-color: brown;
-    }
+body {
+  background-color: brown;
+}
 
     #container {
       background-color: tan;
@@ -65,7 +60,6 @@
     h1, h2, h3 {
       text-align: center;
     }
-  </style>
-</head>
-</body>
-</html>
+h1, h2, h3 {
+  text-align: center;
+}
