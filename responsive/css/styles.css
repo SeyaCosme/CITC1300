@@ -1,0 +1,108 @@
+/* Global Styles */
+
+body {
+  background-color: rgb(228, 70, 8);
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#container {
+  background-color: tan;
+}
+/* Mobile Styles */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  nav {
+    background-color: rgb(252, 122, 16);
+    padding: 5%;
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  display: block;
+  margin: 0 10px;
+}
+nav li a {
+  display: block;
+  height: 30px;
+  background-color: tan;
+  color: rgb(71, 38, 0);
+  font-size: 24px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: rgb(238, 5, 5);
+  color: black;
+}
+
+main {
+  padding: 20%;
+}
+
+h1, 
+h2,
+h3 {
+  text-align: center;
+  color: rgb(71, 38, 0);
+  text-shadow: 1px 1px 1px #000000be;
+}
+
+footer {
+  text-align: center;
+  padding: 40px;
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) {
+  nav li {
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    margin: 5px;
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+  #container {
+    width: 65%;
+    margin: 20px auto;
+    border: 4px solid black;
+    border-radius: 20px;
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+
+nav {
+  padding: 0;
+}
+
+nav li a {
+  background-color: black;
+}
+
+hr {
+  display: none;
+}
+
+.multi_col {
+  display: flex
+}
+.col {
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid black;
+}
