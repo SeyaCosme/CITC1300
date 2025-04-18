@@ -13,11 +13,11 @@ img {
 #container {
   background-color: tan;
 }
-/* Mobile Styles */
 
+/* Mobile Styles */
 @media (min-width: 320px) and (max-width: 480px) {
   nav ul {
-    flex-direction: column; /* ✅ This makes links stack vertically */
+    flex-direction: column;
     align-items: center;
     background-color: rgb(252, 122, 16);
     padding: 5%;
