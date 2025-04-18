@@ -15,22 +15,17 @@ img {
 }
 /* Mobile Styles */
 
-/* Mobile styles */
-@media (max-width: 480px) {
-  #menu-toggle {
-    display: block;
-  }
-
-  #nav-links {
-    display: none;
-    flex-direction: column;
+@media (min-width: 320px) and (max-width: 480px) {
+  nav ul {
+    flex-direction: column; /* ✅ This makes links stack vertically */
+    align-items: center;
+    background-color: rgb(252, 122, 16);
+    padding: 5%;
+    margin-top: 10px;
     text-align: center;
   }
-
-  #nav-links.show {
-    display: flex;
-  }
 }
+
 
 nav ul {
   list-style-type: none;
