@@ -38,11 +38,16 @@ nav li {
 }
 nav li a {
   display: block;
-  height: 30px;
+  padding: 10px 15px;
   background-color: tan;
-  color: rgb(71, 38, 0);
-  font-size: 24px;
+  color: rgb(255, 226, 192);
+  font-size: 20px;
+  line-height: 1.2;
   text-decoration: none;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 nav li a:hover {
