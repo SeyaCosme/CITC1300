@@ -15,15 +15,20 @@ img {
 }
 /* Mobile Styles */
 
-@media (min-width: 320px) and (max-width: 480px) {
-  nav ul {
-    background-color: rgb(252, 122, 16);
-    padding: 5%;
-    margin-top: 10px;
+/* Mobile styles */
+@media (max-width: 480px) {
+  #menu-toggle {
+    display: block;
+  }
+
+  #nav-links {
+    display: none;
+    flex-direction: column;
     text-align: center;
+  }
+
+  #nav-links.show {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
   }
 }
 
