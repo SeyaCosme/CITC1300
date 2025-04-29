@@ -1,5 +1,5 @@
 body {
-  background-color: brown;
+  background-color: rgb(131, 7, 7);
 }
 
     #container {
@@ -65,4 +65,54 @@ body {
     }
 h1, h2, h3 {
   text-align: center;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+nav {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+.column {
+  flex: 1;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 16px;
 }
