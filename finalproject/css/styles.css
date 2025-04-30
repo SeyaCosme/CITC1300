@@ -1,6 +1,5 @@
 /* Base Styles */
 body {
-  background-color: rgb(131, 7, 7);
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -8,7 +7,6 @@ body {
 }
 
 #container {
-  background-color: tan;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -18,8 +16,11 @@ body {
 }
 
 #banner {
-  width: 100%;
+  width: auto;
+  height: 250px; /* You can adjust this height */
   display: block;
+  margin: 0 auto;
+  object-fit: contain; /* Show full image without cropping */
 }
 
 .heading_style {
@@ -103,25 +104,6 @@ nav a:hover {
   border: 1px solid #ccc;
 }
 
-/* Outfit Section */
-.outfit-link-section {
-  padding: 40px;
-  background-color: #1a1a1a;
-  color: white;
-  text-align: center;
-  margin-top: 40px;
-}
-
-.outfit-link-section a {
-  color: #ffcc00;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.outfit-link-section a:hover {
-  text-decoration: underline;
-}
-
 /* Main Centering */
 main {
   text-align: center;
@@ -174,12 +156,182 @@ main {
     font-size: 16px;
   }
 }
-nav a:link,
-nav a:visited {
-  color: rgb(248, 72, 72);
+
+/* Animation */
+.character-column:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
-nav a:hover {
-  background-color: lemonchiffon;
-  color: black;
+/* About Page Animations */
+.about-page h1,
+.about-page h2,
+.about-page h3 {
+  animation: fadeInTitle 1s ease forwards;
+  opacity: 100;
+}
+
+/* Links on the About page */
+.about-page a {
+  color: #ffcc00; /* Gold color for visibility */
+  text-decoration: none;
+}
+
+.about-page a:hover {
+  color: #fff; /* Change color when hovered */
+  text-decoration: underline;
+}
+
+
+.about-page li {
+  opacity: 100;
+  transform: translateX(-20px);
+  animation: listFadeIn 0.6s ease-out forwards;
+  animation-delay: calc(0.2s * var(--i));
+}
+
+.about-page li:nth-child(1) { --i: 1; }
+.about-page li:nth-child(2) { --i: 2; }
+.about-page li:nth-child(3) { --i: 3; }
+.about-page li:nth-child(4) { --i: 4; }
+
+/* Character Columns Styling */
+.character-column {
+  display: inline-block;
+  width: 24%; /* Adjust width to fit 4 columns */
+  margin: 10px;
+  text-align: center;
+  vertical-align: top;
+  transition: transform 0.5s ease-in-out; /* Animation for smooth appearance */
+}
+
+.character-column img {
+  width: 100%; /* Makes images responsive */
+  height: auto;
+  max-width: 250px;
+  border-radius: 8px; /* Rounded corners for images */
+}
+
+/* Character Info Box */
+.character-info {
+  background-color: rgba(50, 50, 50, 0.7); /* Dark background with opacity */
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.character-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #ffcc00; /* Tomb Raider gold accent color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Dark Color Scheme */
+body {
+  background-color: #222; /* Dark background */
+  color: #ddd; /* Light gray text */
+}
+
+nav {
+  background-color: #333; /* Dark navy blue for nav */
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  list-style-type: none;
+}
+
+nav ul li a {
+  color: #e40505;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+nav ul li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Header and Footer Styling */
+header img {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: #ffcc00;
+  padding: 10px;
+}
+
+/* Outfit Page Specific Styles */
+.outfit-link-section {
+  padding: 40px;
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.outfit-link-section a {
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.outfit-link-section a:hover {
+  text-decoration: underline;
+}
+
+.outfit-link-section p {
+  font-size: 16px;
+}
+
+/* AOS Styling */
+[data-aos] {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+[data-aos="zoom-in"] {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .character-column {
+    width: 48%; /* Stack 2 columns on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .character-column {
+    width: 100%; /* Stack 1 column on very small screens */
+  }
+}
+.impact-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.about-video {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.impact-text {
+  flex: 2;
+  min-width: 300px;
 }
