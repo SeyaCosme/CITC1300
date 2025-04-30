@@ -1,98 +1,94 @@
+/* Base Styles */
 body {
   background-color: rgb(131, 7, 7);
-}
-
-    #container {
-      background-color: tan;
-      width: 100%;
-      max-width: 100%;
-      margin: 0 auto;
-      border: 2px solid black;
-      padding: 20px;
-      overflow: hidden;
-    }
-
-    #banner {
-      width: 100%;
-    }
-
-    .heading_style {
-      text-shadow: 2px 2px 2px #000;
-    }
-
-    img {
-      display: block;
-      margin: 0 auto;
-      max-width: 65%;
-      height: auto;
-    }
-
-    nav {
-      text-align: center;
-      margin: 20px 0;
-      background-color: cornsilk;
-      padding: 5px;
-    }
-
-    nav ul {
-      list-style-type: none;
-      padding: 0;
-    }
-
-    nav li {
-      display: inline-block;
-    }
-
-    nav li a {
-      display: block;
-      color: black;
-      font-size: 20px;
-      font-weight: bold;
-      text-decoration: none;
-      margin: 0 20px;
-      width: 125px;
-      height: 40px;
-      line-height: 40px;
-    }
-
-    nav li a:hover {
-      background-color: lemonchiffon;
-      color: black;
-    }
-
-    h1, h2, h3 {
-      text-align: center;
-    }
-h1, h2, h3 {
-  text-align: center;
-}
-body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-.banner {
+#container {
+  background-color: tan;
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  border: 2px solid black;
+  padding: 20px;
+  overflow: hidden;
+}
+
+/* Banner Image */
+#banner {
   width: 100%;
   height: auto;
   display: block;
 }
 
+/* Navigation Styles */
 nav {
-  background-color: #333;
+  background-color: cornsilk;
   padding: 10px;
   text-align: center;
 }
 
-nav a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: bold;
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-nav a:hover {
-  text-decoration: underline;
+nav li {
+  display: inline-block;
+}
+
+nav li a {
+  display: block;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0 20px;
+  width: 125px;
+  height: 40px;
+  line-height: 40px;
+}
+
+nav li a:hover {
+  background-color: lemonchiffon;
+  color: black;
+}
+
+h1, h2, h3, h4 {
+  text-align: center;
+  text-shadow: 2px 2px 2px #000;
+  color: white;
+}
+
+p {
+  font-size: 16px;
+  color: black;
+}
+
+hr {
+  border: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+.game-disc {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+  max-width: 100%;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 65%;
+  height: auto;
 }
 
 .columns {
@@ -107,44 +103,6 @@ nav a:hover {
   padding: 20px;
   background-color: #f2f2f2;
   border: 1px solid #ccc;
-}
-
-h1 {
-  font-size: 20px;
-}
-
-p {
-  font-size: 16px;
-}
-
-.game-disc {
-  width: 200px;
-  height: auto;
-  display: block;
-  margin-bottom: 10px;
-}
-
-/* Mobile Styles */
-@media (max-width: 768px) {
-  .columns {
-    flex-direction: column;
-  }
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .column img {
-    width: 100%;
-  }
-
-
-  h1 {
-    font-size: 18px;
-  }
-
-  p {
-    font-size: 14px;
-  }
 }
 
 .outfit-link-section {
@@ -163,4 +121,35 @@ p {
 
 .outfit-link-section a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav a {
+    margin: 5px 0;
+  }
+
+  .columns {
+    flex-direction: column;
+  }
+
+  .column img {
+    width: 100%;
+  }
+
+  .game-disc {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  h1, h2, h3, h4 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+  }
 }
