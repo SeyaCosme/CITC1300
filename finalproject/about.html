@@ -97,6 +97,25 @@
       from { transform: translateY(100px); opacity: 0; }
       to { transform: translateY(0); opacity: 1; }
     }
+
+    /* Added Flexbox for the Evolution of Series section */
+    .evolution-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 30px;
+    }
+
+    .evolution-section img {
+      max-width: 40%; /* Adjusts the image width */
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .evolution-text {
+      width: 55%; /* Allows text to have more space */
+      padding-right: 20px;
+    }
   </style>
 </head>
 <body class="about-page">
@@ -139,15 +158,21 @@
         </div>
       </div>
       
-          <p>Lara Croft quickly became one of gaming’s most iconic characters, representing a new era of gaming. Her character was not just a pretty face; she was a skilled archaeologist and adventurer, breaking stereotypes and paving the way for women gamers.
-          </p>
-        </div>
-      </div>
+      <p>Lara Croft quickly became one of gaming’s most iconic characters, representing a new era of gaming. Her character was not just a pretty face; she was a skilled archaeologist and adventurer, breaking stereotypes and paving the way for women gamers.</p>
       
       <h2>The Evolution of the Series</h2>
-      <p>While Tomb Raider on PS1 was the first step in Lara Croft’s journey, it laid the foundation for a long-running and evolving franchise. The success of the original game led to numerous sequels, including Tomb Raider: The Last Revelation and Tomb Raider: Chronicles. These titles expanded on the gameplay mechanics and storyline, but it was the 2013 reboot of the series that brought Lara Croft to a new generation of gamers with a more modern take on the character.</p>
+      
+      <!-- Added new section with flexbox -->
+      <div class="evolution-section">
+        <div class="evolution-text">
+          <p>While Tomb Raider on PS1 was the first step in Lara Croft’s journey, it laid the foundation for a long-running and evolving franchise. The success of the original game led to numerous sequels, including Tomb Raider: The Last Revelation and Tomb Raider: Chronicles. These titles expanded on the gameplay mechanics and storyline, but it was the 2013 reboot of the series that brought Lara Croft to a new generation of gamers with a more modern take on the character.</p>
 
-      <p>The game’s legacy endures, with Tomb Raider inspiring countless other games in the action-adventure genre. Its innovative gameplay mechanics and strong protagonist paved the way for future adventures and set a high bar for the industry.</p>
+          <p>The game’s legacy endures, with Tomb Raider inspiring countless other games in the action-adventure genre. Its innovative gameplay mechanics and strong protagonist paved the way for future adventures and set a high bar for the industry.</p>
+        </div>
+        
+        <!-- Insert the image next to the text -->
+        <img src="images/allgames.jpeg" alt="Evolution of Tomb Raider Series" />
+      </div>
 
       <h3>Legacy and Influence</h3>
       <p>Tomb Raider’s influence goes beyond its technical achievements. It revolutionized 3D platforming and exploration and set a new standard for action-adventure games. It inspired games such as Uncharted, Assassin’s Creed, and Prince of Persia, all of which incorporated elements from Tomb Raider’s design.</p>
