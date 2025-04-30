@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8" >
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tomb Raider Ps1</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/styles.css">
   <style>
     body {
       background-color: #2b1d17;
@@ -98,7 +98,11 @@
       to { transform: translateY(0); opacity: 1; }
     }
 
-    /* Added Flexbox for the Evolution of Series section */
+    /* Fix for obsolete frameborder attribute */
+    iframe {
+      border: none;
+    }
+
     .evolution-section {
       display: flex;
       align-items: center;
@@ -107,13 +111,13 @@
     }
 
     .evolution-section img {
-      max-width: 40%; /* Adjusts the image width */
+      max-width: 40%; 
       height: auto;
       border-radius: 8px;
     }
 
     .evolution-text {
-      width: 55%; /* Allows text to have more space */
+      width: 55%;
       padding-right: 20px;
     }
   </style>
@@ -121,7 +125,7 @@
 <body class="about-page">
   <div id="container">
     <header>
-      <img id="banner" src="images/tr_case.jpg" alt="TR_Mummy" />
+      <img id="banner" src="images/tr_case.jpg" alt="TR_Mummy" >
     </header>
 
     <nav>
@@ -134,7 +138,7 @@
       </ul>
     </nav>
 
-    <hr />
+    <hr>
 
     <main>
       <h1>Impact on Gaming Culture</h1>
@@ -146,7 +150,6 @@
           height="225" 
           src="https://www.youtube.com/embed/XHJuFhcRICE?si=HYO8pKHSQKesp0HE" 
           title="YouTube video player" 
-          frameborder="0" 
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
           referrerpolicy="strict-origin-when-cross-origin" 
           allowfullscreen>
@@ -171,7 +174,7 @@
         </div>
         
         <!-- Insert the image next to the text -->
-        <img src="images/allgames.jpeg" alt="Evolution of Tomb Raider Series" />
+        <img src="images/allgames.jpeg" alt="Evolution of Tomb Raider Series">
       </div>
 
       <h3>Legacy and Influence</h3>
@@ -188,11 +191,11 @@
     </main>
 
     <section class="image-section">
-      <img src="images/tr_guns.jpg" alt="Lara with pistols" />
+      <img src="images/tr_guns.jpg" alt="Lara with pistols">
       <p style="text-align:center; margin-top:10px;">Lara Croft facing enemies with her iconic dual pistols — a lasting symbol of strength in gaming history.</p>
     </section>
 
-    <hr />
+    <hr>
     <footer>&copy; 2025 Tomb Raider Project</footer>
   </div>
 </body>
