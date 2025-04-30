@@ -116,3 +116,10 @@ h1 {
 p {
   font-size: 16px;
 }
+
+.game-disc {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
