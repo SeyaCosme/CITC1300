@@ -137,7 +137,7 @@ p {
     width: 100%;
   }
 
-  
+
   h1 {
     font-size: 18px;
   }
@@ -147,3 +147,20 @@ p {
   }
 }
 
+.outfit-link-section {
+  padding: 40px;
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.outfit-link-section a {
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.outfit-link-section a:hover {
+  text-decoration: underline;
+}
