@@ -123,3 +123,26 @@ p {
   display: block;
   margin-bottom: 10px;
 }
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .columns {
+    flex-direction: column;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .column img {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
